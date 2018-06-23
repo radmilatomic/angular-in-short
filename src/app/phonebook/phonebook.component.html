@@ -1,0 +1,24 @@
+<div>
+    <h3>Add new Entry</h3>
+  <label>name:
+    <input #entryName />
+  </label>
+  <label>number:
+    <input #entryNumber />
+  </label>
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button (click)="add(entryName.value,entryNumber.value); ">
+    Add new Entry
+  </button>
+</div>
+
+
+
+<ul class="people">
+  <li *ngFor =" let entry of people" (click)="onSelect(entry)">
+    <span class="badge">{{entry.id}}</span> {{entry.name}};{{entry.phonenumber}}
+    <button (click)="deleteEntry(entry)">delete</button>
+  </li>
+</ul>
+
+<app-entry-details [phonebookEntry]="selectedEntry"></app-entry-details>

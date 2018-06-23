@@ -1,0 +1,16 @@
+<div *ngIf="phonebookEntry">
+<h2>{{ phonebookEntry.name |uppercase}} Details</h2>
+<div><span>id: </span>{{phonebookEntry.id}}</div>
+<div><span>name: </span>{{phonebookEntry.name}}</div>
+<div><label>edit name:
+      <input [(ngModel)]="phonebookEntry.name" placeholder="name">
+    </label>
+</div>
+
+<div><span>number: </span>{{phonebookEntry.phonenumber}}</div>
+<div><label>edit number:
+      <input [(ngModel)]="phonebookEntry.phonenumber" placeholder="name">
+    </label>
+</div>
+
+</div>
