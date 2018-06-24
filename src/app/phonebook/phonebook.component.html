@@ -1,24 +1,25 @@
-<div>
+<div id="add-new-entry">
     <h3>Add new Entry</h3>
   <label>name:
-    <input #entryName />
+    <input #entryName class="add-input"/>
   </label>
   <label>number:
-    <input #entryNumber />
+    <input #entryNumber class="add-input"/>
   </label>
   <!-- (click) passes input value to add() and then clears the input -->
-  <button (click)="add(entryName.value,entryNumber.value); ">
+  <button (click)="add(entryName.value,entryNumber.value); " id="add-button">
     Add new Entry
   </button>
 </div>
+<hr>
 
 
 
-<ul class="people">
-  <li *ngFor =" let entry of people" (click)="onSelect(entry)">
+<div class="people">
+  <div  class="phonebook-entry" *ngFor =" let entry of people" (click)="onSelect(entry)">
     <span class="badge">{{entry.id}}</span> {{entry.name}};{{entry.phonenumber}}
-    <button (click)="deleteEntry(entry)">delete</button>
-  </li>
-</ul>
-
+    <button (click)="deleteEntry(entry)" class="delete-button">delete</button>
+  </div>
+</div>
+<hr>
 <app-entry-details [phonebookEntry]="selectedEntry"></app-entry-details>

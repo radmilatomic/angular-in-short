@@ -1,0 +1,17 @@
+#add-new-entry{
+    margin:20px;
+}
+.people{
+    margin:20px;
+}
+.phonebook-entry{
+    padding:5px;
+}
+
+.delete-button{
+    margin-left: 20px
+}
+
+.add-input{
+    margin-right: 20px
+}

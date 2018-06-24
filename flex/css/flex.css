@@ -1,0 +1,200 @@
+.links{
+        font-size: 20px;
+   }
+#space{
+        margin: 20px;
+    }
+p{
+        font-size: 25px;
+    }
+
+.flex-container>div, .flex-containertwo>div, .flex-containerthree>div, .flex-containerfive>div, .flex-containerseven>div {
+    background-color: #f1f1f1;
+     width: 100px;
+     margin: 10px;
+     text-align: center;
+     line-height: 75px;
+     font-size: 30px;
+    }
+
+.flex-container {
+         display: flex;
+         background-color: DodgerBlue;
+                        
+
+/*                      Use the column value to stack the items in a column from top to bottom  */
+                      
+/*                        flex-direction: column;  */
+    
+/*                      Use the column-reverse value to stack the items in a column from bottom to top:*/
+                    
+/*                        flex-direction: column-reverse;*/
+                      
+/*              Use the row value to stack the items in a row from left to right:          */
+                        
+/*                        flex-direction: row;*/
+                        
+/*                       Use the row-reverse value to stack the items in a row from right to left:                         */
+
+/*                        flex-direction: row-reverse;*/
+                        
+                        
+                    }
+                
+
+  
+.flex-containertwo {
+    display: flex;
+    background-color: DodgerBlue;
+    
+/*    Use the wrap value to display items in multiple rows:*/
+    
+   flex-wrap: wrap; 
+    
+/*   Use the nowrap value to display all items in one row:*/
+    
+/*     flex-wrap: nowrap  */
+    
+/*   Use the wrap-reverse value to display items in multiple rows, starting from the bottom:     */
+    
+/*flex-wrap: wrap-reverse;*/
+    
+}
+
+.flex-containerthree {
+  display: flex;
+  background-color: DodgerBlue;
+    
+/*    Use center to align the items in the center of the container:*/
+
+      /*justify-content: center;*/
+    
+/*  Use flex-start to align the items at the beginning of the container:  */
+    
+/*    justify-content: flex-start;*/
+    
+/*    Use flex-end to align the items at the end of the container:*/
+    
+/*     justify-content: flex-end;*/
+    
+/*    Use space-around to display the items with equal spacing around them:*/
+    
+/*    justify-content: space-around;*/
+    
+/*    Use space-between to display the items with equal spacing between them:*/
+    
+    justify-content: space-between;
+
+}
+    
+
+.flex-containerfour {
+  display: flex;
+  height: 200px;
+  background-color: DodgerBlue;
+        
+        
+/*      Use center to center align the items:  */
+        
+/* align-items: center;  */
+        
+/*        Use flex-start to align the items at the start of the container:*/
+
+/*align-items: flex-start;*/
+        
+/*Use flex-end to align the items at the end of the container:*/
+        
+/*  align-items: flex-end;      */
+        
+/*   Use stretch to stretch the items from the start to the end of the container:     */
+        
+/*      align-items: stretch;  */
+        
+        
+/*        the example uses different font-size to demonstrate that the items gets aligned by the text baseline:*/
+        
+/*        ************************************/
+        
+        
+/*         align-items: baseline;*/
+        }
+
+
+.flex-containerfour>div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+  
+.flex-containerfive {
+  display: flex;
+  height: 600px;
+  flex-wrap: wrap;
+  background-color: DodgerBlue;
+       
+/*     Use space-between to display the rows with equal spacing between them:  */
+       
+/*  align-content: space-between;*/
+       
+/*     Use space-around to display the rows with equal spacing around them:  */
+       
+/*       align-content: space-around;*/
+       
+/*       Use stretch to display the items stretched in the entire row:*/
+/*        align-content: stretch;*/
+       
+/*      Use center to display the rows in the middle of the container: */
+       
+       align-content: center;
+       
+/*       Use flex-start to display the rows at the beginning of the container:*/
+       
+/*       align-content: flex-start;*/
+       
+/*       Use flex-end to display the rows at the end of the container:*/
+       
+/*       align-content: flex-end;*/
+       
+} 
+    
+.center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        background-color: DodgerBlue;
+   }
+
+.center>div{
+        background-color: #f1f1f1;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+    }
+
+.flex-containersix {
+        display: flex;
+        height: 200px;
+        background-color: #f1f1f1;
+}
+    
+.flex-containersix>div {
+        background-color: red;
+        color: white;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+}
+
+.flex-containerseven {
+        display: flex;
+        background-color: red;
+}
+    

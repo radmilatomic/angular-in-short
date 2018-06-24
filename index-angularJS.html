@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US" ng-app="myApp" >
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<p>{{2+2}}
+</p>
+<label>
+    Name:
+</label>
+<input type="text" ng-model="name" placeholder="Enter a name">
+<hr/>
+<h2> Hello {{name}}!</h2>
+<div ng-init="celsius=0;diff=32">
+    <p>
+        Celsius: <input type="text" ng-model="celsius">
+        Fahrenheit: {{celsius*1.8+diff}}
+    </p>
+
+</div>
+
+<div ng-init="students=['David','Steve','Bob']">
+    <ol>
+        <li ng-repeat="name in students">
+            {{name}}
+        </li>
+    </ol>
+
+</div>
+<div  ng-controller="myController">
+    {{message}}
+
+</div>
+<div ng-controller="myController">
+    <button ng-click="count=count+1">Click me!</button>
+    <p>{{count}}</p>
+</div>
+<div ng-controller="myController">
+    <span>items:{{todo.length}}</span>
+    <ul>
+        <li ng-repeat="todo in todos">
+            <label class="checkbox">
+                <input type="checkbox" ng-model="todo.done">
+                <span class="done-{{todo.done}}">{{todo.text}}
+
+                </span>
+            </label>
+        </li>
+    </ul>
+    <form ng-submit="addTodo()">
+        <input type="text" ng-model="todoText" size="30" placeholder="add new todo here">
+        <input type="submit" value="add">
+
+    </form>
+</div>
+<script>
+    var ngApp=angular.module('myApp',[]);
+    ngApp.controller('myController',function($scope){
+        $scope.message="Hello World!";
+        $scope.count=0;
+        $scope.todos=[
+            {text:"Learn Angular", done:false},
+            {text:"build an Angular app",done:false}]
+        $scope.addTodo=function(){
+            if($scope.todoText!==''){
+                $scope.todos.push({text:$scope.todoText,done:false});
+                $scope.todoText='';
+            }
+        }
+        }
+    );
+   
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

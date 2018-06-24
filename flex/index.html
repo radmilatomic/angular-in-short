@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+    <head>
+      
+        <title>Flexbox</title>
+    <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/flex.css">   
+    </head>
+  <body>
+    
+      <h1>Flexbox</h1>
+      <h2>Flexbox Layout</h2>
+        <p>
+            The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without having to use floats or positioning.
+        </p>
+        <p>
+            A Flexible Layout must have a parent element with the display property set to flex.Direct child elements(s) of the flexible container automatically becomes flexible items.  
+        </p>      
+        <div>
+            .flex-container {display: flex;}
+        </div> 
+     
+    <h1>The flex-direction Property</h1>
+        <p> 
+            The flex-direction property defines in which direction the container wants to stack the items.
+        </p>
+        
+      
+        <div class="flex-container">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>  
+        </div>
+
+       <h1>The flex-wrap Property</h1>
+        <p>
+          The flex-wrap property defines if, and how, the container wants its children to wrap.The examples below have 12 items, to better demonstrate the flex-wrap property.
+        </p>
+
+        <div class="flex-containertwo">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>  
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>  
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>  
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>  
+        </div>
+      
+     <h1>The justify-content Property</h1>
+        <p>The justify-content property aligns the items:</p>
+      
+        <div class="flex-containerthree">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>  
+        </div>
+      
+       <h1>The align-items Property</h1>
+        <p>
+          The align-items property aligns the items vertically (the opposite axis of the justify-content property).
+        </p>
+      
+        <div class="flex-containerfour">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            
+<!--        ***(odkomentarisati druge divove, i zakomentarisati prve da bi se prikazao baseline primer)***-->
+            
+        <!--<div><h1>1</h1></div>
+            <div><h6>2</h6></div>
+            <div><h3>3</h3></div>-->
+        </div>
+      
+      <h1>The align-content Property</h1>
+      <p>The align-content property aligns the item rows.</p>
+      
+        <div class="flex-containerfive">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>  
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>  
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>  
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>  
+        </div>
+      
+   <h1>Perfect centering</h1>
+      <div class="center">
+        <div><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_perfect_center" target="_blank">here</a></div>
+      </div>
+      
+     <h1>Child Elements (Items)</h1>
+      <p>The direct child element(s) of a flexible container automatically becomes flexible items.</p> 
+      
+        <div class="flex-containerseven">
+            <div style="order: 3">1</div>
+            <div style="order: 2">2</div>
+            <div style="order: 4">3</div> 
+            <div style="order: 1">4</div>
+        </div>
+      
+      <h1>The flex-grow Property</h1>
+      <p>The flex-grow property specifies how much a flex item will grow relative to the rest of the flex items.The value must be a number, default value is 0.</p> 
+      
+<div class="flex-containerseven">
+  <div style="flex-grow: 1">1</div>
+  <div style="flex-grow: 1">2</div>
+  <div style="flex-grow: 8">3</div> 
+</div>
+      
+      
+      
+    <h1>The flex-shrink Property</h1>
+      
+      <p>The flex-shrink property specifies how much a flex item will shrink relative to the rest of the flex items.The value must be a number, default value is 1.</p>   
+      
+        <div class="flex-containerseven">
+            <div>1</div>
+            <div>2</div>
+            <div style="flex-shrink: 0">3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+        </div>
+      
+      <h1>The flex-basis Property</h1>
+      <p>The flex-basis property specifies the width of a flex item.</p>   
+      
+        <div class="flex-containerseven">
+            <div>1</div>
+            <div>2</div>
+            <div style="flex-basis: 200px">3</div>
+            <div>4</div>
+        </div>
+      
+     <h1>The flex Property</h1>
+      <p>The flex property is a shorthand property for the flex-grow, flex-shrink, and flex-basis properties.</p>    
+      
+      <div class="flex-containerseven">
+            <div>1</div>
+            <div>2</div>
+            <div style="flex: 0 0 200px">3</div>
+            <div>4</div>
+      </div>
+      
+      <h1>The align-self Property</h1>
+      <p>The align-self property overrides the default alignment set by the container's align-items property.</p>    
+      
+        <div class="flex-containersix">
+            <div>1</div>
+            <div>2</div>
+            <div style="align-self: center">3</div>
+            <div>4</div>
+        </div>
+      
+        <div id="space"></div>
+      
+        <div class="flex-containersix">
+            <div>1</div>
+            <div style="align-self: flex-start">2</div>
+            <div style="align-self: flex-end">3</div>
+            <div>4</div>
+        </div>
+      
+      
+      
+      <h1>More links:</h1>
+            <div class="links"><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">here</a></div>
+            <div class="links"><a href="https://www.w3schools.com/css/css3_flexbox.asp" target="_blank">here</a></div>
+            <div class="links"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">here</a></div>
+  </body>
+</html>
